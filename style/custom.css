@@ -1,0 +1,260 @@
+#exampleSlider {
+  position: relative;
+}
+
+
+
+#exampleSlider .MS-content {
+  margin: 15px 5%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+#exampleSlider-2 {
+  position: relative;
+}
+
+
+
+#exampleSlider-2 .MS-content {
+  margin: 15px 5%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+@media (max-width: 767px) {
+  #exampleSlider .MS-content {
+    margin: 0;
+  }
+  #exampleSlider-2 .MS-content {
+    margin: 0;
+  }
+}
+
+#exampleSlider .MS-content .item {
+  display: inline-block;
+  margin: 0px 10px;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  vertical-align: top;
+  width: 23.3%;
+}
+#exampleSlider-2 .MS-content .item {
+  display: inline-block;
+  margin: 0px 10px;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  vertical-align: top;
+  width: 23.3%;
+}
+
+/* eklentiler */
+.item img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  
+
+}
+
+
+
+.card {
+  width: 100%;
+  background-color: #fff;
+  position: absolute;
+  bottom: -55px;
+  border-radius: 20px 20px 0 0;
+  text-align: center;
+  transition: all 0.5s;
+  box-sizing: border-box;
+  border: 1px solid #efefef;
+
+}
+
+.item:hover .card {
+  bottom: 0px;
+}
+
+.item {
+  border: 1px solid #e6e6e6;
+  border-radius: 10px 10px 0 0;
+}
+
+
+
+.card-title {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #80694f;;
+  font-weight: 700;
+  white-space: normal;
+}
+
+.card-branch {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #444;
+  font-weight: 600;
+  white-space: normal;
+  
+}
+
+.card-button {
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.card-button a {
+  padding: 10px 55px;
+  position: relative;
+  box-shadow:
+    0.3em 0.3em 0 0 #BF9D77,
+    inset 0.3em 0.3em 0 0 #e4d5b7;
+  transition: all ease-in-out 0.5s;
+  font-size: 14px;
+  font-weight: 600;
+  color: #444;
+  text-decoration: none;
+  border-radius: 15px;
+  box-sizing: border-box;
+
+}
+
+.card-button a:hover {
+  box-shadow: 0 0 0 0 #BF9D77, inset 6em 3.5em 0 0 #e4d5b7;
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 1200px) {
+  #exampleSlider .MS-content .item {
+    width: 31%;
+  }
+  #exampleSlider-2 .MS-content .item {
+    width: 31%;
+  }
+}
+
+@media (max-width: 980px) {
+
+  .card {
+    bottom: 0;
+  }
+
+  .card-button a{
+    box-shadow: 0 0 0 0 #BF9D77, inset 6em 3.5em 0 0 #e4d5b7;
+    color: #fff;
+  }
+
+  #exampleSlider .MS-content .item {
+    width: 47.5%;
+  }
+  #exampleSlider-2 .MS-content .item {
+    width: 47.5%;
+  }
+
+  .item {
+    box-shadow: none;
+    
+  }
+}
+
+@media (max-width: 600px) {
+  #exampleSlider .MS-content .item {
+    width: 97%;
+  }
+  #exampleSlider-2 .MS-content .item {
+    width: 97%;
+  }
+
+  .item img{ height: 585px;}
+
+  .card-button{margin-bottom:9px; }
+
+  #exampleSlider .MS-controls .MS-left {
+    left: 0;
+    margin-left: 20px;
+  }
+  
+  #exampleSlider-2 .MS-controls .MS-left {
+    left: 0;
+    margin-left: 20px;
+  }
+  
+  
+  
+  #exampleSlider .MS-controls .MS-right {
+    right: 0;
+    margin-right: 20px;
+  }
+ 
+  #exampleSlider-2 .MS-controls .MS-right {
+    right: 0;
+    margin-right: 20px;
+  }
+ 
+}
+
+
+
+
+/* eklenti sonu */
+
+#exampleSlider .MS-controls button {
+  position: absolute;
+  border: none;
+  background: transparent;
+  font-size: 30px;
+  outline: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #BF9D77;
+}
+#exampleSlider-2 .MS-controls button {
+  position: absolute;
+  border: none;
+  background: transparent;
+  font-size: 30px;
+  outline: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #BF9D77;
+}
+
+
+
+#exampleSlider .MS-controls button:hover {
+  cursor: pointer;
+}
+
+#exampleSlider .MS-controls .MS-left {
+  left: -40px;
+}
+
+
+
+#exampleSlider .MS-controls .MS-right {
+  right: -40px;
+}
+#exampleSlider-2 .MS-controls button:hover {
+  cursor: pointer;
+}
+
+#exampleSlider-2 .MS-controls .MS-left {
+  left: -40px;
+}
+
+
+
+#exampleSlider-2 .MS-controls .MS-right {
+  right: -40px;
+}
+
